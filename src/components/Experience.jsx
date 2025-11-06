@@ -1,5 +1,11 @@
 import { motion as Motion } from "framer-motion";
 import { useState } from "react";
+import { 
+  FaGraduationCap, 
+  FaLaptopCode, 
+  FaServer, 
+  FaBolt 
+} from "react-icons/fa";
 
 const experiences = [
   {
@@ -9,7 +15,7 @@ const experiences = [
     description:
       "Taught students basic computing and guided them through hands-on practice sessions that built curiosity about technology.",
     color: "from-purple-500 to-pink-500",
-    icon: "🎓"
+    icon: <FaGraduationCap className="text-white" />
   },
   {
     role: "Assistant Computer Specialist",
@@ -18,7 +24,7 @@ const experiences = [
     description:
       "Maintained systems, installed software, and helped customers with digital form filling, printing, and internet use.",
     color: "from-blue-500 to-cyan-500",
-    icon: "💻"
+    icon: <FaLaptopCode className="text-white" />
   },
   {
     role: "Backend Developer (Self Project)",
@@ -27,7 +33,7 @@ const experiences = [
     description:
       "Built a backend for a personal finance tracker using Django REST. Focused on clean architecture, authentication, and performance.",
     color: "from-emerald-500 to-teal-500",
-    icon: "🚀"
+    icon: <FaServer className="text-white" />
   },
   {
     role: "Intern Developer",
@@ -36,7 +42,7 @@ const experiences = [
     description:
       "Worked with a remote team to create a Failed Cron Job Monitor using Telex. Practiced API integration, debugging, and teamwork under deadlines.",
     color: "from-orange-500 to-red-500",
-    icon: "⚡"
+    icon: <FaBolt className="text-white" />
   },
 ];
 
