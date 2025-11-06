@@ -1,14 +1,29 @@
-# My personal portfolio
+# Hexel - Modern ## 🚀 Tech Stack
 
-A small personal portfolio starter built with React and Vite. The project includes a simple component structure and uses utility classes in components (Tailwind CSS-style classes are present in components; see notes below).
+- React 18
+- Vite 4
+- Tailwind CSS
+- Framer Motion
+- React Icons
+- PostCSS
 
-## Features
+## 🛠️ Getting Started
 
-- Responsive Hero section and basic layout
-- Component-based structure: `Navbar`, `Hero`, etc.
-- Development-ready with Vite
+A sleek, animated portfolio website showcasing my work as a Full-Stack Software Engineer. Built with React, Vite, and Framer Motion for smooth animations and interactions.
 
-## Tech stack
+
+## ✨ Features
+
+- Modern, responsive design with glass-morphism effects
+- Animated components using Framer Motion
+- Interactive skill cards with hover effects
+- Project showcase with dynamic transitions
+- Downloadable CV functionality
+- Social media integration
+- Brand-consistent UI with custom iconography
+- Dark theme optimized for readability
+
+## 🚀 Tech Stack
 
 - React
 - Vite
@@ -32,8 +47,45 @@ A small personal portfolio starter built with React and Vite. The project includ
 - `src/assets/` — images and static assets
 - `public/` — static files served as-is
 
-## Notes
+## ✨ Component Highlights
 
-- If you plan to use Tailwind CSS, follow the official Tailwind + Vite setup. If Tailwind is not installed, the utility classes in JSX will have no effect — convert to plain CSS or add Tailwind.
-- For deployment consider Vercel, Netlify, or GitHub Pages.
+### Hero Section
+- Animated entrance with staggered reveals
+- Gradient text effects
+- Social media integration
+- Downloadable CV button
+- Floating animation accents
+
+### Skills Grid
+- Interactive skill cards
+- Category-based organization
+- Custom hover effects
+- Brand-colored icons
+- Smooth animations
+
+### Project Showcase
+- Dynamic grid layout
+- Hover reveal effects
+- Project previews
+- Responsive image handling
+- Smooth scrolling navigation
+
+## 📱 Responsive Design
+
+- Mobile-first approach
+- Breakpoint optimization
+- Touch-friendly interactions
+- Adaptive typography
+- Flexible grid layouts
+
+## 🚀 Deployment
+
+The site is optimized for deployment on:
+- Vercel (recommended)
+- Netlify
+- GitHub Pages
+
+## 📝 License
+
+Copyright © 2025 Elijah Denis. All rights reserved.
 

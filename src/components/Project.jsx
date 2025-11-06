@@ -1,6 +1,5 @@
 import { motion as Motion } from "framer-motion";
 import bg from "../assets/background.jpg";
-import me from "../assets/me.jpg";
 
 const projects = [
   {
@@ -14,7 +13,7 @@ const projects = [
     title: "Voting Platform",
     description:
       "A secure and scalable voting system built with Django backend and React frontend.",
-    image: me,
+    image: bg,
     link: "#",
   },
   {
