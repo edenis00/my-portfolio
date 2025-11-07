@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="backdrop-blur-md text-white shadow-md fixed w-full top-0 left-0 z-50">
+        <nav className="backdrop-blur-md bg-slate-950/80 text-white shadow-md fixed w-full top-0 left-0 z-50">
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
@@ -54,14 +55,66 @@ function Navbar() {
                 </div>
             </div>
 
-            <div className="md:hidden bg-gray-800 px-4 pb-3 space-y-2">
-                <a href="#home" className="hover:text-indigo-400 transition">Home</a>
-                <a href="#about" className="hover:text-indigo-400 transition">About</a>
-                <a href="#skills" className="hover:text-indigo-400 transition">Skills</a>
-                <a href="#projects" className="hover:text-indigo-400 transition">Projects</a>
-                <a href="#resume" className="hover:text-indigo-400 transition">Resume</a>
-                <a href="#contact" className="hover:text-indigo-400 transition">Contact</a>
-            </div>
+            <AnimatePresence>
+                {isOpen && (
+                    <Motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="md:hidden overflow-hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800"
+                    >
+                        <div className="px-4 py-3 space-y-3">
+                            <Motion.a
+                                href="#home"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                                variants={{
+                                    open: { x: 0, opacity: 1 },
+                                    closed: { x: -20, opacity: 0 }
+                                }}
+                            >
+                                Home
+                            </Motion.a>
+                            <Motion.a
+                                href="#about"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                About
+                            </Motion.a>
+                            <Motion.a
+                                href="#skills"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Skills
+                            </Motion.a>
+                            <Motion.a
+                                href="#projects"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Projects
+                            </Motion.a>
+                            <Motion.a
+                                href="#experience"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Experience
+                            </Motion.a>
+                            <Motion.a
+                                href="#contact"
+                                className="block hover:text-indigo-400 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Contact
+                            </Motion.a>
+                        </div>
+                    </Motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     )
 }
