@@ -1,5 +1,4 @@
-# Hexel - Modern ## 🚀 Tech Stack
-
+# My portfolio 
 - React 18
 - Vite 4
 - Tailwind CSS
@@ -7,12 +6,8 @@
 - React Icons
 - PostCSS
 
-## 🛠️ Getting Started
 
-A sleek, animated portfolio website showcasing my work as a Full-Stack Software Engineer. Built with React, Vite, and Framer Motion for smooth animations and interactions.
-
-
-## ✨ Features
+## Features
 
 - Modern, responsive design with glass-morphism effects
 - Animated components using Framer Motion
@@ -23,7 +18,7 @@ A sleek, animated portfolio website showcasing my work as a Full-Stack Software 
 - Brand-consistent UI with custom iconography
 - Dark theme optimized for readability
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - React
 - Vite
@@ -47,7 +42,7 @@ A sleek, animated portfolio website showcasing my work as a Full-Stack Software 
 - `src/assets/` — images and static assets
 - `public/` — static files served as-is
 
-## ✨ Component Highlights
+## Component Highlights
 
 ### Hero Section
 - Animated entrance with staggered reveals
@@ -70,7 +65,7 @@ A sleek, animated portfolio website showcasing my work as a Full-Stack Software 
 - Responsive image handling
 - Smooth scrolling navigation
 
-## 📱 Responsive Design
+## Responsive Design
 
 - Mobile-first approach
 - Breakpoint optimization
@@ -78,14 +73,9 @@ A sleek, animated portfolio website showcasing my work as a Full-Stack Software 
 - Adaptive typography
 - Flexible grid layouts
 
-## 🚀 Deployment
 
-The site is optimized for deployment on:
-- Vercel (recommended)
-- Netlify
-- GitHub Pages
 
-## 📝 License
+## License
 
 Copyright © 2025 Elijah Denis. All rights reserved.
 
